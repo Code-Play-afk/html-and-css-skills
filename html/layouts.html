@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layouts</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      .container {
+        margin: 10px auto;
+        padding: 20px;
+        width: 600px;
+        border: 2px solid black;
+        text-align: center;
+      }
+      .profile-image {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: middle;
+      }
+      .textarea {
+        height: 50px;
+        border: none;
+        padding: 10px;
+        background-color: transparent;
+        font-size: 22px;
+      }
+      .btn {
+        cursor: pointer;
+        padding: 10px;
+        font-size: 22px;
+        border: none;
+        color: white;
+        background-color: rgb(41, 77, 175);
+      }
+      #tweet-btn {
+        font-weight: 500;
+        width: 100px;
+        border-radius: 44px;
+      }
+      .tweet-container {
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 05px 2px rgba(0, 0, 0, 0.3);
+      }
+      .suggestion {
+        width: 200px;
+        height: 330px;
+        padding: 0px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 05px 3px rgba(0, 0, 0, 0.3);
+      }
+      .imgs {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 3px;
+        margin: auto;
+      }
+      h2,
+      p {
+        display: block;
+        text-align: left;
+        margin: 7px;
+      }
+      .add-friend {
+        display: block;
+        font-weight: 400;
+        text-align: left;
+        margin: 7px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="new-tweet">
+      <div class="tweet-container">
+        <img src="../img/img.jpg" class="profile-image" />
+        <input type="text" class="textarea" placeholder="What's happening?" />
+        <button id="tweet-btn" class="btn">Tweet</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="suggestion">
+        <img src="../img/img1.jpg" class="imgs" />
+        <h2>Jane Doe</h2>
+        <p>2 mutual friend</p>
+        <button class="btn add-friend">Add Friend</button>
+      </div>
+    </div>
+  </body>
+</html>

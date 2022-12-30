@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1#0" />
+    <title>CSS Buttons</title>
+    <link rel="preconnect" href="https://fonts#googleapis#com" />
+    <link rel="preconnect" href="https://fonts#gstatic#com" crossorigin />
+    <link
+      href="https://fonts#googleapis#com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+      div {
+        border: 2px solid black;
+        display: inline-block;
+        padding: 20px;
+        margin: 20px 10px;
+      }
+      h1,
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
+
+      #btn-subscribe {
+        background-color: rgb(167, 39, 39);
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        transition: opacity 0.5s;
+      }
+      #btn-subscribe:hover {
+        opacity: 0.8;
+      }
+      #btn-subscribe:active {
+        opacity: 0.6;
+      }
+
+      #btn-join {
+        background-color: white;
+        color: black;
+        padding: 15px;
+        width: 100px;
+        font-size: 20px;
+        border: 2px solid black;
+        cursor: pointer;
+        margin: 10px;
+        transition: color 0.15s, background-color 0.15s, opacity 0.15s;
+      }
+      #btn-join:hover {
+        background-color: black;
+        color: white;
+      }
+      #btn-join:active {
+        opacity: 0.8;
+      }
+
+      #btn-tweet {
+        height: 56px;
+        width: 120px;
+        background-color: #00acee;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 30px;
+        transition: box-shadow 0.2s;
+      }
+      #btn-tweet:hover {
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      #btn-request-now {
+        background-color: rgb(5, 5, 5);
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+      }
+
+      #btn-add-to-cart {
+        height: 56px;
+        width: 300px;
+        background-color: #ffd000;
+        color: black;
+        padding: 15px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 30px;
+      }
+
+      #btn-sign-up {
+        height: 56px;
+        width: 150px;
+        background-color: #489c23;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 11px;
+      }
+
+      #btn-get-started {
+        height: 56px;
+        width: 160px;
+        background-color: rgb(121, 82, 179);
+        color: black;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 11px;
+      }
+      #btn-download {
+        height: 56px;
+        width: 150px;
+        background-color: transparent;
+        color: rgb(108, 117, 125);
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid rgb(108, 117, 125);
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 11px;
+      }
+
+      #btn-apply-on-company-website {
+        height: 56px;
+        width: 325px;
+        background-color: rgb(10, 102, 194);
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 30px;
+      }
+
+      #btn-save {
+        height: 56px;
+        width: 115px;
+        background-color: transparent;
+        color: rgb(10, 102, 194);
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid rgb(10, 102, 194);
+        cursor: pointer;
+        margin: 10px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>Buttons</h1>
+      <button id="btn-subscribe">Subscribe</button>
+
+      <button id="btn-join">Join</button>
+
+      <button id="btn-tweet">Tweet</button>
+    </div>
+
+    <br />
+
+    <div>
+      <h2>Uber</h2>
+      <button id="btn-request-now">Request Now</button>
+    </div>
+
+    <div>
+      <h2>Amazon</h2>
+      <button id="btn-add-to-cart">Add to Cart</button>
+    </div>
+
+    <div>
+      <h2>GitHub</h2>
+      <button id="btn-sign-up">Sign up</button>
+    </div>
+
+    <br />
+
+    <div>
+      <h2>Bootstrap</h2>
+      <button id="btn-get-started">Get started</button>
+      <button id="btn-download">Download</button>
+    </div>
+
+    <div>
+      <h2>Linked In</h2>
+      <button id="btn-apply-on-company-website">
+        Apply on company website
+      </button>
+      <button id="btn-save">Save</button>
+    </div>
+  </body>
+</html>

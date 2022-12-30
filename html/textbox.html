@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Boxes</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans&family=Poppins:wght@400;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body{
+        text-align: center;
+      }
+
+      div {
+        display:inline-block;;
+        margin: 20px 10px;
+        padding: 20px;
+        border: 2px solid black;
+        width: 620px;
+        /* background-color: lightpink; */
+        /* text-align: center; */
+      }
+
+       .btn {
+        cursor: pointer;
+      }
+
+      h2 {
+        width: 100%;
+      }
+
+      #textbox{
+        display: block;
+        margin:5px 0px;
+        padding-left: 10px;
+        text-align: left;
+        width: 300px;
+      }
+      .text-box {
+        width: 70%;
+        height: 32px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+      }
+
+      #rounded-corner {
+        height: 40px;
+        width: 240px;
+        border-radius: 10px;
+        padding-left: 15px;
+        text-align: left;
+      }
+      span{
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #red-font{
+        color: #DB4437;
+      }
+      #blue-font{
+        color: #4285F4;
+      }
+      #green-font{
+        color: #0F9D58;
+      }
+      #yellow-font{
+        color: #F4B400;
+      }
+      #google-head{
+        font-family: "Open Sans", sans-serif;
+        font-size: 70px;
+        letter-spacing: -10px;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      #google {
+        font-family: "Open Sans", sans-serif;
+        display: block;
+        height: 40px;
+        width:500px;
+        border-radius: 30px;
+        padding-left: 15px;
+        text-align: left;
+        font-size: 18px;
+        border: none;
+        box-shadow: 0px 0px 6px 2px rgb(0, 0, 0, 0.2);
+        margin: 10px auto;
+      }
+
+      #linkedin {
+        height: 40px;
+        border-radius: 5px;
+        width: 444px;
+      }
+
+      #linkedin-btn {
+        height: 50px;
+        width: 444px;
+        font-size: 18px;
+        background-color: rgb(10, 102, 194);
+        color: white;
+        border: none;
+        border-radius: 50px;
+      }
+
+      .hero{
+        background-color: white;
+      }
+      img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      #twitter{
+        vertical-align: middle;
+        text-align: left;
+        padding-left: 15px;
+        height: 60px;
+        width: 400px;
+        border:none;
+      }
+      #twitter-btn{
+        background-color: #00acee;;
+        height: 40px;
+        width:100px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 40px;;
+        vertical-align: middle;
+      }
+
+      #btn-yn{
+        background-color: white;
+        color: black;
+        /* padding: 15px; */
+        width: 100px;
+        font-size: 18px;
+        border: 2px solid black;
+        cursor: pointer;
+        /* margin: 10px; */
+        padding: 5px;
+        width: 70px;
+        height: 40px;
+        vertical-align: middle;
+      }
+      #first-name,
+      #last-name,
+      #email{
+        text-align: left;
+        background-color: white;
+        color: black;
+        border: 2px solid rgb(122, 121, 121);
+        border-radius: 5px;
+        margin:5px 2px;
+        padding-left: 15px;
+        height:55px;
+        width:508px;
+        
+      } 
+      #first-name,
+      #last-name{
+        display: inline-block;
+        width:250px;
+      }
+      #submit{
+        background-color: rgb(47, 111, 207);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        margin:5px 2px;
+        height:55px;
+        width:508px;
+      }
+
+      #pickup,
+      #destination{
+        display: block;
+        text-align: left;
+        background-color: rgb(238, 235, 235);
+        color: black;
+        border: none;
+        border-radius: 5px;
+        margin:5px 2px;
+        padding-left: 15px;
+        height:55px;
+        width:508px;
+        
+      } 
+      #request-now,
+      #schedule-for-later{
+        display: inline-block;
+        font-size: 18px;
+        border:none;
+        margin:5px 2px;
+        height:55px;
+        width:200px;
+      }
+      #request-now{
+        color: white;
+        background-color: black;
+        margin-right: 15px;
+      }
+      #schedule-for-later{
+        border:2px solid black;
+        background-color:white;
+        width:250px;
+        color:black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h2>Text Boxes</h2>
+      <input type="text" class="text-box" id="textbox" placeholder="Name" />
+
+      <input type="text" class="text-box" id="textbox" placeholder="Email" />
+    </div>
+
+    <div>
+      <h2>Rouned Corner</h2>
+      <input type="text" id="rounded-corner" class="text-box" placeholder="Search" />
+    </div>
+
+    <div>
+      <h2 id="google-head">
+        <span id="blue-font">G</span>
+        <span id="red-font">o</span>
+        <span id="yellow-font">o</span>
+        <span id="blue-font">g</span>
+        <span id="green-font">l</span>
+        <span id="red-font">e</span>
+      </h2>
+      <input type="text" id="google" class="text-box" placeholder="Search Google or type an URL" />
+    </div>
+
+    <div>
+      <h2>Linked In</h2>
+      <p style="text-align: left; margin: 0px 0px 5px 0px">Email</p>
+      <input type="text" id="linkedin" class="text-box" />
+      <p style="color: rgb(77, 76, 76); margin: 10px 0px">
+        By Clicking Agree & Join, you agree to the Privacy Policy.
+      </p>
+      </button>
+      <button class="btn" id="linkedin-btn">Agree & Join</button>
+    </div>
+
+    <div class="hero">
+      <h2>Twitter</h2>
+        <img src="../img/img.jpg">
+        <input type="text" id="twitter" class="text-box" placeholder="What's happening?"/>
+        <button class="btn" id="twitter-btn">Tweet</button>
+    </div>
+
+    <div>
+      <h2>Button & Display Property</h2>
+      <p style="
+      font-size: 18px;
+      display: inline-block;
+      width: 50%;
+      padding: 10px;
+      vertical-align: middle;
+      ">
+        Thanks for chatting with our customer support. Would you like to take a survey?
+      </p>
+      <button class="btn" id="btn-yn">Yes</button>
+      <button class="btn" id="btn-yn">No</button>
+    </div>
+
+    <div>
+      <h2>Signup Form</h2>
+      <input type="text" id="first-name" class="text-box" placeholder="Frist Name"/>
+      <input type="text" id="last-name" class="text-box" placeholder="Last Name"/>
+      <input type="text" id="email" class="text-box" placeholder="Email"/>
+      <button class="btn" id="submit">Submit</button>
+    </div>
+
+    <div>
+      <h2>Request a ride now</h2>
+      <input type="text" id="pickup" class="text-box" placeholder="Enter pickup location"/>
+      <input type="text" id="destination" class="text-box" placeholder="Enter destination"/>
+      <button class="btn" id="request-now">Request now</button>
+      <button class="btn" id="schedule-for-later">Schedule for later</button>
+    </div>
+  </body>
+</html>
